@@ -28,7 +28,7 @@ public class loadCSVData implements CommandLineRunner {
     private void loadCsvData() throws Exception {
         List<IplEntity> iplEntities = new ArrayList<>();
 
-        InputStream inputStream = new ClassPathResource("matches.csv").getInputStream();
+        InputStream inputStream = new ClassPathResource("matches1.csv").getInputStream();
 
         CsvParserSettings setting = new CsvParserSettings();
         setting.setHeaderExtractionEnabled(true);
