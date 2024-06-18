@@ -10,6 +10,8 @@ public class IplEntity {
     private Long id;
     @Column(name = "season")
     private String season;
+    @Column(name = "city")
+    private String city;
     @Column(name = "team1")
     private String team1;
     @Column(name = "team2")
@@ -43,6 +45,13 @@ public class IplEntity {
 
     public void setSeason(String season) {
         this.season = season;
+    }
+
+    public String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getTeam1() {

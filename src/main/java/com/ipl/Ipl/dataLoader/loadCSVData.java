@@ -39,6 +39,7 @@ public class loadCSVData implements CommandLineRunner {
         recordList.forEach(record -> {
             IplEntity iplEntity = new IplEntity();
             iplEntity.setSeason(record.getString("season"));
+            iplEntity.setCity(record.getString("city"));
             iplEntity.setTeam1(record.getString("team1"));
             iplEntity.setTeam2(record.getString("team2"));
             iplEntity.setDate(record.getString("date"));
